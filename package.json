@@ -5,13 +5,13 @@
   "author": "RoboSync Contributors",
   "license": "MIT",
   "main": "./out/main/index.js",
-  "homepage": "https://github.com/ddvad/robosync",
+  "homepage": "https://github.com/devnxh/robosync",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ddvad/robosync.git"
+    "url": "https://github.com/devnxh/robosync.git"
   },
   "bugs": {
-    "url": "https://github.com/ddvad/robosync/issues"
+    "url": "https://github.com/devnxh/robosync/issues"
   },
   "scripts": {
     "dev": "electron-vite dev",

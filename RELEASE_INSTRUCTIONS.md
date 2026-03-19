@@ -14,7 +14,7 @@
    git add .
    git commit -m "feat: initial release of RoboSync v1.0.0"
    git branch -M main
-   git remote add origin https://github.com/ddvad/robosync.git
+   git remote add origin https://github.com/devnxh/robosync.git
    git push -u origin main
    ```
 
@@ -44,7 +44,7 @@ git push origin v1.0.0   # ← this triggers the release workflow
 The build takes approximately 5–8 minutes on GitHub's Windows runner.
 
 After completion, go to:
-  https://github.com/ddvad/robosync/releases
+  https://github.com/devnxh/robosync/releases
 
 You will see the release with two .exe files attached:
 - `RoboSync-Setup-1.0.0.exe` — NSIS installer

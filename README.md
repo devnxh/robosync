@@ -2,13 +2,13 @@
 
 > A modern, production-ready GUI wrapper for Windows Robocopy — built with Electron, React, and TypeScript.
 
-![GitHub release](https://img.shields.io/github/v/release/ddvad/robosync?style=flat-square&color=4f6ef7)
+![GitHub release](https://img.shields.io/github/v/release/devnxh/robosync?style=flat-square&color=4f6ef7)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 ![Built with Electron](https://img.shields.io/badge/built%20with-Electron-47848F?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square)
-![CI](https://github.com/ddvad/robosync/actions/workflows/ci.yml/badge.svg)
-![Release](https://github.com/ddvad/robosync/actions/workflows/release.yml/badge.svg)
+![CI](https://github.com/devnxh/robosync/actions/workflows/ci.yml/badge.svg)
+![Release](https://github.com/devnxh/robosync/actions/workflows/release.yml/badge.svg)
 
 ---
 
@@ -18,8 +18,8 @@
 
 | | |
 |---|---|
-| [📦 **Download Installer (.exe)**](https://github.com/ddvad/robosync/releases/latest) | Installs RoboSync with Start Menu shortcut and auto-uninstaller |
-| [🗜️ **Download Portable (.exe)**](https://github.com/ddvad/robosync/releases/latest) | Single .exe, no installation required — run from anywhere |
+| [📦 **Download Installer (.exe)**](https://github.com/devnxh/robosync/releases/latest) | Installs RoboSync with Start Menu shortcut and auto-uninstaller |
+| [🗜️ **Download Portable (.exe)**](https://github.com/devnxh/robosync/releases/latest) | Single .exe, no installation required — run from anywhere |
 
 ---
 
@@ -110,7 +110,7 @@
 ### Setup
 
 ```bash
-git clone https://github.com/ddvad/robosync.git
+git clone https://github.com/devnxh/robosync.git
 cd robosync
 npm install
 ```
