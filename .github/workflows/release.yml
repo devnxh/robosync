@@ -1,0 +1,75 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Package installer and portable
+        run: npx electron-builder --win --x64
+        env:
+          NODE_ENV: production
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: List release artifacts
+        run: Get-ChildItem release/ -Recurse | Select-Object FullName, Length
+        shell: pwsh
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: RoboSync ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          body: |
+            ## RoboSync ${{ github.ref_name }}
+
+            ### Download Options
+
+            | File | Description |
+            |------|-------------|
+            | `RoboSync-Setup-*.exe` | **Recommended** — Windows installer with Start Menu shortcut |
+            | `RoboSync-*-x64.exe` | Portable — no installation required, run directly |
+
+            ### System Requirements
+            - Windows 10 / 11 (64-bit)
+            - Robocopy (built into Windows — no extra install needed)
+
+            ### Installation
+            1. Download `RoboSync-Setup-*.exe`
+            2. Run the installer
+            3. Launch RoboSync from Start Menu or Desktop shortcut
+
+            ---
+            *See [CHANGELOG](CHANGELOG.md) for what's new in this release.*
+          files: |
+            release/*.exe
+            release/**/*.exe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
