@@ -19,7 +19,7 @@
     "preview": "electron-vite preview",
     "postinstall": "electron-builder install-app-deps",
     "package": "electron-vite build && electron-builder",
-    "lint": "tsc --noEmit",
+    "lint": "tsc --build --noEmit",
     "clean": "rimraf out release"
   },
   "dependencies": {
