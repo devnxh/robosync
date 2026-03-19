@@ -7,7 +7,6 @@
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 ![Built with Electron](https://img.shields.io/badge/built%20with-Electron-47848F?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square)
-![CI](https://github.com/devnxh/robosync/actions/workflows/ci.yml/badge.svg)
 ![Release](https://github.com/devnxh/robosync/actions/workflows/release.yml/badge.svg)
 
 ---
