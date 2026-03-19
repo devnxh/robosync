@@ -44,15 +44,7 @@
 
 ---
 
-## 📸 Screenshots
 
-| New Job | Saved Jobs | Run History |
-|---------|------------|-------------|
-| *(screenshot)* | *(screenshot)* | *(screenshot)* |
-
-> Take actual screenshots from the running app and add them to `assets/screenshots/`, then update the image links above.
-
----
 
 ## 🎯 Robocopy Mode Reference
 
@@ -234,13 +226,7 @@ RoboSync is built with security as a first-class concern:
 - **No Node in Renderer** — Zero `require()`, `ipcRenderer`, or `electron-store` imports in the renderer process
 - **Data Validation** — All persisted JSON data validated with Zod schemas on load — corrupted data is skipped, never crashes
 
----
 
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
----
 
 ## 🤝 Contributing
 
